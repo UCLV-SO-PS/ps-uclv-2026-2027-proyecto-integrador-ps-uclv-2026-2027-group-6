@@ -181,6 +181,8 @@ int main(void)
     fflush(stdout);
 
     for (;;) {
+        pid_t child_pid;
+
         client_length = sizeof client_address;
         client_fd = accept(
             server_fd,
@@ -196,7 +198,22 @@ int main(void)
             continue;
         }
 
-        handle_client(client_fd, &client_address);
+        child_pid = fork();
+        if (child_pid < 0) {
+            perror("fork");
+            close(client_fd);
+            continue;
+        }
+
+        if (child_pid == 0) {
+            close(server_fd);
+            handle_client(client_fd, &client_address);
+            close(client_fd);
+            _exit(EXIT_SUCCESS);
+        }
+
+        printf("[servidor] hijo %ld atiende una conexion\n", (long)child_pid);
+        fflush(stdout);
         close(client_fd);
     }
 
