@@ -1,0 +1,7 @@
+schema: "classroom50/repo-config/v1"
+classroom: "ps-uclv-2026-2027"
+assignment: "proyecto-integrador-ps-uclv-2026-2027"
+owner:
+  username: "ViticoMC"
+  id: 183854965
+  accepted_at: "2026-11-24T14:33:03Z"
