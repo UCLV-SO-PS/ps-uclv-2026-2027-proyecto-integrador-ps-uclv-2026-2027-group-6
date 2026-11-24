@@ -14,12 +14,16 @@
  *   terminar de enviar la respuesta; el cliente lee hasta EOF. No se
  *   reutiliza la misma conexion para varias consultas.
  *
- *   Episodio encontrado:
+ *   Episodio encontrado ("OK" seguido del bloque formateado por la
+ *   biblioteca):
  *       OK
- *       Codigo: S01E01
- *       Episodio: The Hedge Knight
- *       Calificacion: 9.2/10
- *       Votos: 45120
+ *       ================================
+ *              IMDb EPISODE MONITOR
+ *       ================================
+ *       Codigo:        S01E01
+ *       Episodio:      The Hedge Knight
+ *       Calificacion:  9.2 / 10
+ *       Votos:         45120
  *
  *   Episodio inexistente:
  *       ERROR
