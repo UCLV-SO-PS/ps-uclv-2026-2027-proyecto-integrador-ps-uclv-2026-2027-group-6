@@ -1,0 +1,9 @@
+# Artefactos de compilación
+*.o
+libmonitor.a
+server
+client
+
+# Carpeta de objetos generados
+build/*
+!build/.gitkeep
