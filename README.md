@@ -10,6 +10,8 @@ TCP `6666` y atiende cada conexión con un proceso hijo.
 - Aguero Pantoja Héctor David
 - Morciego Orozco Gabriel Alejandro
 
+### Nota: 5
+
 ## Requisitos
 
 - Linux con las API POSIX para sockets, procesos, tuberías y señales, además
