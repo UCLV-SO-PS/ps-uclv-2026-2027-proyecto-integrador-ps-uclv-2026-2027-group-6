@@ -3,6 +3,7 @@
 libmonitor.a
 server
 client
+orden a seguir.md
 
 # Carpeta de objetos generados
 build/*
