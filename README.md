@@ -6,7 +6,9 @@ TCP `6666` y atiende cada conexión con un proceso hijo.
 
 ## Integrantes
 
-Pendiente de completar con los nombres y apellidos del equipo.
+- Victor Manuel Martinez Campo
+- Aguero Pantoja Héctor David
+- Morciego Orozco Gabriel Alejandro
 
 ## Requisitos
 
@@ -99,8 +101,17 @@ usando un puerto efímero:
 echo $?
 ```
 
-El código de salida esperado es `0`. Para las evidencias de entrega, guardar
-en `screenshot/` capturas reales del servidor escuchando en el puerto `6666`,
-una consulta, varios clientes concurrentes con sus IP y PID, y el resultado
-de `--test-run`. Las capturas deben ser recopiladas durante la ejecución en
-el entorno Linux; no se incluyen imágenes simuladas.
+El código de salida esperado es `0`.
+
+### Capturas de evidencia
+
+Las capturas se recopilaron durante la ejecución real en Linux y se encuentran
+en `screenshot/`:
+
+- `screenshot/01_servidor_consulta.png`: servidor escuchando en el puerto
+  `6666`, consulta de `S01E05` y registro de la IP del cliente con el PID del
+  hijo.
+- `screenshot/02_clientes_concurrentes.png`: cuatro clientes concurrentes con
+  IP y PID distintos, y sus respuestas.
+- `screenshot/03_test_run.png`: resultado exitoso de `./server --test-run`
+  con código de salida `0`.
